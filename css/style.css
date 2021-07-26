@@ -1,0 +1,93 @@
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+.caixa{
+    width: 940px;
+    position: relative;/*posição relativa*/
+    margin: 0 auto;/*centralizou*//*toda vez que tem margin: auto, o item será centralizado*/
+}
+nav li{
+    display: inline;
+    margin:0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+nav{
+    position: absolute;/*com essa config o nav ficou fora do "header", porém com a posição relativa da "caixa", o "nav" vai pra dentro da "caixa"*/
+    top: 110px;
+    right: 0;
+}
+
+
+.titulo-center{
+    padding-top: 20px;/* ajustar o espaçamento interno do elementoe*/
+    margin: 10px;/*ajustando o espaçamento externo*/
+    text-align: center;
+}
+#banner{
+    width: 100%;
+}
+#p-missao{
+    font-size: 20px;
+    text-align: center;
+
+}
+#p-missao b{
+    color: blue;
+    
+}
+p{
+    text-align: center;
+}
+
+.itens{
+    font-style: italic;
+}
+
+.beneficios{
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.principal{
+    background:  #CCCCCC;
+    padding: 30px;
+
+}
+
+
+.beneficios ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.imgBenficio{
+    width: 50%;
+}
+
+.titulo-principal{
+    padding-left: 20px;
+}
+
+footer{
+    text-align: center;
+    background: url(../img/bg.jpg);/*adicionando imagem de fundo*/
+    padding: 40px 0;;
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px 0 ;
+}
