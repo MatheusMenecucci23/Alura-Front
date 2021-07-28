@@ -1,0 +1,92 @@
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+.caixa{
+    width: 940px;
+    position: relative;/*posição relativa*/
+    margin: 0 auto;/*centralizou*//*toda vez que tem margin: auto, o item será centralizado*/
+}
+nav li{
+    display: inline;
+    margin:0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+nav{
+    position: absolute;/*com essa config o nav ficou fora do "header", porém com a posição relativa da "caixa", o "nav" vai pra dentro da "caixa"*/
+    top: 110px;
+    right: 0;
+}
+footer{
+    text-align: center;
+    background: url(../img/bg.jpg);/*adicionando imagem de fundo*/
+    padding: 40px 0;;
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin-top: 20px 0 ;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.input-padrao{
+    margin: 0 0 20px;
+    display: block;
+    padding: 10px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 5px 20px 0px;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border:  none;
+    border-radius: 5px;
+    transition: 1s all;/*transição do elemento*/
+    cursor: pointer;
+}
+
+
+.enviar:hover{
+    background: red;
+    transform: scale(1.2);/*aumentando o item em 20%*/
+}
+table{
+    margin: 20px 0 40px;/*espaçamento externo*/
+}
+thead{
+    background-color: #555555;
+    font-weight: bold;
+    color: white;
+}
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px ;/*espaçamento interno*/
+}

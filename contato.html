@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contato</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/reset.css'><!--limpando o css padrão do navegador-->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style-contato.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="img/logo.png" alt="logo da barbearia Alura"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home<a></li>
+                    <li><a href="produto.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+           
+
+            <label for="nomecompleto">Nome completo</label><!--label e input andam juntos-->
+            <input type="text" id="nomecompleto" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)xxxx-xxxx">
+
+            <label for="mensagem"></label>
+            <textarea name="" id="mensagem" cols="70" rows="10" required></textarea>
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+                <label for="radio-email"> <input type="radio" value="email" id="radio-email" name="contato">Email</label>
+               
+                
+                <label for="radio-telefone"><input type="radio" value="telefone" id="radio-telefone" name="contato">
+                    Telefone</label>
+
+                <label for="radio-whats"><input type="radio" value="whatsapp" id="radio-whats" name="contato" checked>
+                    Whatsapp</label>
+            </fieldset>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+           
+
+            <label><input type="checkbox" class="checkbox" checked>Gostario de receber nossas novidades por email</label>
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+        <!--id:
+            value: valor do input
+            name: deixando o radios no mesmo grupo
+            for: para quem você quer referenciar
+            type: tipo do input
+            fieldset: tag para campos de assunto específicos
+            placeholder: o que fica escrito no formulário antes de você escrever algo
+            required: item fica como obrigatório
+
+        -->
+        <table>
+            <tr>
+                <td colspan="5">Atendemos a cidade do Rio de Janeiro</td><!--juntando celulas colspan e rowspan--> 
+            </tr>
+            <thead><!--criando o cabeçalho da tabela-->
+                <tr>
+                    <th>Dia</td>
+                    <th>Horário</td>
+                </tr>
+            </thead><!--corpo da tabela-->
+            <tbody>
+                <tr>
+                    <td>Segunda </td>
+                    <td>8 ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8 ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8 ~ 20h</td>
+                </tr>   
+            </tbody>  
+             
+            <tfoot>
+                <tr>
+                    <th colspan="2">Rodapé da tabela</th>
+                </tr>
+            </tfoot>    
+        </table>
+    </main>
+
+
+
+    <footer>
+        <img src="img/logo-branco.png" alt="logo da barbearia do Matheus">
+        <p class="copyright">&copy; Copyright Barbearia Matheus - 2021</p>
+    </footer>
+    
+</body>
+</html>
